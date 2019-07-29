@@ -1,0 +1,102 @@
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <title>登录</title>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache搜索">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate">
+    <META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+    <META HTTP-EQUIV="expires" CONTENT="0">
+    <meta name="viewport"
+        content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="./css/weui.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/mobile_feedback.css"> -->
+    <link rel="stylesheet" href="./css/moblie_login.css">
+    <style>
+        html,
+        body,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body ontouchstart style="height:100%">
+    <div class="login_header">
+        <img src="img/login_bg.png" class="imgW">
+        <img src="img/login_bg_icon.png" class="login_bg_icon">
+    </div>
+    <div class="p50 login_content">
+        <div class="weui-tab__panel">
+            <div id="tab1" class="weui_tab_bd_item weui_tab_bd_item_active">
+                <!-- 内容一 -->
+                <div class="weui-cell iphone">
+                    <div class="weui-cell__hd">
+                        <label class="weui_label">
+                            <img src="./img/login_iphone.png" class="login_inputIcon">
+                        </label>
+                    </div>
+                    <div class="weui-cell__bd">
+                        <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入手机号">
+                    </div>
+                </div>
+                <!-- <div class="weui-cell captcha">
+                    <div class="weui-cell__hd">
+                        <label class="weui_label">
+                            <img src="/img/login_captcha.png" class="login_inputIcon">
+                        </label>
+                    </div>
+                    <div class="weui-cell__bd login_relative">
+                        <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入图形验证码">
+                        <img src="img/login_bg_icon.png" style="width:70px;height:30px" class="getverfication">
+                    </div>
+                </div> -->
+                <div class="weui-cell verification">
+                    <div class="weui-cell__hd">
+                        <label class="weui_label">
+                            <img src="./img/login_verification.png" class="login_inputIcon">
+                        </label>
+                    </div>
+                    <div class="weui-cell__bd login_relative">
+                        <input class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入短信验证码">
+                        <span class="getverfication">获取验证码</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page__bd page__bd_spacing login_footer p50">
+        <div class="page">
+            <div class="btn_bottom">
+                <a href="javascript:;" class="weui-btn fontwn" id="submitBtn">登录</a>
+            </div>
+        </div>
+        <div class="weui-footer">
+
+            <p class="weui-footer__text login_relative" style="color:#999999">
+                <img src="img/login_icon.png" class="login_icon">
+                <span class="login_footer_text">温馨提示：仅限西安移动本地用户</span>
+            </p>
+        </div>
+    </div>
+
+</body>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        // $('.weui-navbar_item').on('click', function () {
+        //     $(this).addClass('weui-bar_item_on').siblings('.weui-bar_item_on').removeClass(
+        //         'weui-bar_item_on');
+
+        //     //内容切换
+        //     $(".weui-tab__panel .weui_tab_bd_item_active").removeClass('weui_tab_bd_item_active');
+        //     var data_toggle = jQuery(this).attr("href");
+        //     console.log(data_toggle);
+        //     $(data_toggle).addClass("weui_tab_bd_item_active");
+        // });
+    });
+</script>
+
+</html>

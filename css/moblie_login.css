@@ -1,0 +1,175 @@
+label {
+    margin-bottom: 0;
+}
+
+.weui_tab_bd_item {
+    display: none;
+    /* height: 100%; */
+    overflow: auto;
+}
+
+.weui_tab_bd_item.weui_tab_bd_item_active {
+    display: block;
+}
+
+.weui-navbar a {
+    text-decoration: none;
+}
+
+.p50 {
+    padding: 0px 50px;
+}
+
+.weui-navbar {
+    display: flex;
+}
+
+.weui-navbar_item {
+    min-height: 30px;
+    padding: 5px;
+    border-bottom: 1px solid #ececec;
+    flex: 1;
+    text-align: center;
+    color: #666;
+}
+
+.weui-navbar a.weui-navbar_item:focus,
+.weui-navbar a.weui-navbar_item:active,
+.weui-navbar a.weui-navbar_item:hover,
+.weui-navbar_item.weui-bar_item_on {
+    color: #0e37a8 !important;
+    border-bottom: 1px solid #0e37a8;
+}
+
+.weui_label {
+    margin-right: 10px;
+}
+
+.iphone .weui-cell__bd,
+.verification .weui-cell__bd,
+.captcha .weui-cell__bd {
+    border-bottom: 1px solid #ececec;
+}
+
+
+
+.iphone.weui-cell,
+.verification.weui-cell,
+.captcha.weui-cell {
+    padding: 12px;
+    padding-right: 0;
+}
+
+.iphone.weui-cell {
+    padding-top: 30px;
+}
+
+.iphone.weui-cell:before,
+.verification.weui-cell:before,
+.captcha.weui-cell:before {
+    border: 0;
+}
+
+/* 登录按钮按 */
+
+.page {
+    /* position: fixed; */
+    /* width: calc(100% - 100px); */
+    bottom: 15px;
+    height: 4rem;
+}
+
+.btn_bottom {
+    margin: auto;
+    /* width: 90%; */
+    background: #5B93E9;
+    border-radius: 50px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.btn_bottom a:focus,
+.btn_bottom a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fontwn {
+    font-weight: normal;
+}
+
+/* 登录header */
+.imgW {
+    width: 100%;
+    height: auto;
+}
+
+.login_bg_icon {
+    width: 102px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.login_header,
+.login_relative {
+    position: relative;
+}
+
+/* 登录   input输入区域 */
+.login_inputIcon {
+    width: 20px;
+    height: 1.41176471em;
+}
+
+.login_content {
+    margin-top: 60px;
+}
+
+.iphone .weui-cell__bd,
+.verification .weui-cell__bd,
+.captcha .weui-cell__bd {
+    font-size: 13px;
+}
+
+.iphone .weui-cell__bd input,
+.verification .weui-cell__bd input,
+.captcha .weui-cell__bd input {
+    line-height: 30px;
+    height: 30px;
+}
+
+.getverfication {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* footer */
+.login_footer {
+    margin-top: 50px;
+    /* margin-bottom: 30px; */
+    /* position: absolute;
+    width: 100%;
+    bottom: 30px; */
+}
+
+.weui-footer {
+    margin-top: 30px;
+    color: #999999;
+    vertical-align: middle;
+}
+
+.login_icon {
+    width: 13px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login_footer_text {
+    margin-left: 15px;
+}
