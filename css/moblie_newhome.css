@@ -388,3 +388,13 @@ header.headerH55 {
 .weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
     color: #5B93E9;
 }
+
+/* 切换内容 */
+.weui_tab_bd_item {
+    display: none;
+    overflow: auto;
+}
+
+.weui_tab_bd_item.weui_tab_bd_item_active {
+    display: block;
+}

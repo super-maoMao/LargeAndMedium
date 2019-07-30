@@ -17,7 +17,7 @@
 		html,
 		body,
 		p {
-			margin: 0;
+			margin: 0; 
 			padding: 0;
 		}
 	</style>
@@ -29,200 +29,217 @@
 			<div class="weui-tab">
 				<!-- 首页 -->
 				<div class="weui-tab__panel">
-					<header class="textAlign headerH55">西安移动和微销</header>
-					<!-- 轮播图 -->
-					<section>
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<img src="./img/home_header.png" />
+					<div class=" weui_tab_bd_item weui_tab_bd_item_active" id="tab1">
+						<header class="textAlign headerH55">西安移动和微销</header>
+						<!-- 轮播图 -->
+						<section>
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="./img/home_header.png" />
+									</div>
+									<div class="swiper-slide">
+										<img src="./img/home_header.png" />
+									</div>
+									<div class="swiper-slide">
+										<img src="./img/home_header.png" />
+									</div>
 								</div>
-								<div class="swiper-slide">
-									<img src="./img/home_header.png" />
-								</div>
-								<div class="swiper-slide">
-									<img src="./img/home_header.png" />
-								</div>
+								<div class="swiper-pagination"></div>
 							</div>
-							<div class="swiper-pagination"></div>
-						</div>
-					</section>
-					<!-- 内容 -->
-					<div>
-						<div class="placeholderDiv"></div>
-						<section class="grindingBox pad15">
-							<div class="grindingBox_title">
-								<img src="./img/grindingBox_icon.png">
-								<span>专属魔盒</span>
-							</div>
-							<div class="page flex js_show grindingBox_content">
-								<div class="page__bd page__bd_spacing">
-									<div class="weui-flex">
-										<div class="leftbox">
-											<div class="leftbox_box patentRelative">
-												<div class="placeholder">
-													<img src="./img/grindingBox_left.png" style="width:100%;" />
+						</section>
+						<!-- 内容 -->
+						<div>
+							<div class="placeholderDiv"></div>
+							<section class="grindingBox pad15">
+								<div class="grindingBox_title">
+									<img src="./img/grindingBox_icon.png">
+									<span>专属魔盒</span>
+								</div>
+								<div class="page flex js_show grindingBox_content">
+									<div class="page__bd page__bd_spacing">
+										<div class="weui-flex">
+											<div class="leftbox">
+												<div class="leftbox_box patentRelative">
+													<div class="placeholder">
+														<img src="./img/grindingBox_left.png" style="width:100%;" />
+														<div class="grindingBox_leftbox">
+															<p class="grindingBox_leftbox_p1">1元500M</p>
+															<p class="grindingBox_leftbox_p2">流量包</p>
+															<p class="grindingBox_leftbox_p3">订购立即生效</p>
+														</div>
+
+													</div>
+												</div>
+											</div>
+											<div class="weui-flex flexDirection_clumn rightbox">
+												<div class="weui-flex__item rightbox_top patentRelative">
+													<div class="placeholder top50">
+														<img src="./img/grindingBox_right_icon.png"
+															class="grindingBox_rightboxIcon">
+														<p>1元500M流量包</p>
+													</div>
+												</div>
+												<div class="weui-flex__item rightbox_bot patentRelative">
+													<div class="placeholder top50">
+														<img src="./img/grindingBox_right_icon.png"
+															class="grindingBox_rightboxIcon">
+														<p>1元500M流量包</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<div class="placeholderDiv"></div>
+							<section class="hotProduct pad15">
+								<div class="hotProduct_title">
+									<img src="./img/hotProduct_icon.png">
+									<span>热销产品</span>
+								</div>
+								<div class="page flex js_show">
+									<div class="page__bd page__bd_spacing">
+										<!-- 接收数组遍历产品 -->
+										<div class="weui-grids">
+											<a href="javascript:;" class="weui-grid"
+												style="width:100%;padding-right: 0">
+												<div class="weui-grid__icon">
+													<img src="./img/hotProduct_top.png" alt="">
 													<div class="grindingBox_leftbox">
 														<p class="grindingBox_leftbox_p1">1元500M</p>
 														<p class="grindingBox_leftbox_p2">流量包</p>
-														<p class="grindingBox_leftbox_p3">订购立即生效</p>
 													</div>
-
 												</div>
-											</div>
+											</a>
 										</div>
-										<div class="weui-flex flexDirection_clumn rightbox">
-											<div class="weui-flex__item rightbox_top patentRelative">
-												<div class="placeholder top50">
-													<img src="./img/grindingBox_right_icon.png"
-														class="grindingBox_rightboxIcon">
-													<p>1元500M流量包</p>
+										<div class="weui-grids">
+											<a href="javascript:;" class="weui-grid">
+												<div class="weui-grid__icon">
+													<img src="./img/hotProduct_bot1.png" alt="">
+													<div class="hotProduct_botbox">
+														<div style="height:100%" class="top50">
+															<p class="hotProduct_botbox_p1">1元500M</p>
+															<p class="hotProduct_botbox_p2">流量包</p>
+														</div>
+													</div>
 												</div>
-											</div>
-											<div class="weui-flex__item rightbox_bot patentRelative">
-												<div class="placeholder top50">
-													<img src="./img/grindingBox_right_icon.png"
-														class="grindingBox_rightboxIcon">
-													<p>1元500M流量包</p>
+											</a>
+											<a href="javascript:;" class="weui-grid">
+												<div class="weui-grid__icon">
+													<img src="./img/hotProduct_bot2.png" alt="">
+													<div class="hotProduct_botbox">
+														<div style="height:100%" class="top50">
+															<p class="hotProduct_botbox_p1">1元500M</p>
+															<p class="hotProduct_botbox_p2">流量包</p>
+														</div>
+													</div>
 												</div>
-											</div>
+											</a>
+											<a href="javascript:;" class="weui-grid">
+												<div class="weui-grid__icon">
+													<img src="./img/hotProduct_bot3.png" alt="">
+													<div class="hotProduct_botbox">
+														<div style="height:100%" class="top50">
+															<p class="hotProduct_botbox_p1">1元500M</p>
+															<p class="hotProduct_botbox_p2">流量包</p>
+														</div>
+													</div>
+												</div>
+											</a>
 										</div>
 									</div>
 								</div>
-							</div>
-						</section>
-						<div class="placeholderDiv"></div>
-						<section class="hotProduct pad15">
-							<div class="hotProduct_title">
-								<img src="./img/hotProduct_icon.png">
-								<span>热销产品</span>
-							</div>
-							<div class="page flex js_show">
-								<div class="page__bd page__bd_spacing">
-									<!-- 接收数组遍历产品 -->
-									<div class="weui-grids">
-										<a href="javascript:;" class="weui-grid" style="width:100%;padding-right: 0">
-											<div class="weui-grid__icon">
-												<img src="./img/hotProduct_top.png" alt="">
-												<div class="grindingBox_leftbox">
-													<p class="grindingBox_leftbox_p1">1元500M</p>
-													<p class="grindingBox_leftbox_p2">流量包</p>
-												</div>
-											</div>
-										</a>
-									</div>
-									<div class="weui-grids">
-										<a href="javascript:;" class="weui-grid">
-											<div class="weui-grid__icon">
-												<img src="./img/hotProduct_bot1.png" alt="">
-												<div class="hotProduct_botbox">
-													<div style="height:100%" class="top50">
-														<p class="hotProduct_botbox_p1">1元500M</p>
-														<p class="hotProduct_botbox_p2">流量包</p>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="javascript:;" class="weui-grid">
-											<div class="weui-grid__icon">
-												<img src="./img/hotProduct_bot2.png" alt="">
-												<div class="hotProduct_botbox">
-													<div style="height:100%" class="top50">
-														<p class="hotProduct_botbox_p1">1元500M</p>
-														<p class="hotProduct_botbox_p2">流量包</p>
-													</div>
-												</div>
-											</div>
-										</a>
-										<a href="javascript:;" class="weui-grid">
-											<div class="weui-grid__icon">
-												<img src="./img/hotProduct_bot3.png" alt="">
-												<div class="hotProduct_botbox">
-													<div style="height:100%" class="top50">
-														<p class="hotProduct_botbox_p1">1元500M</p>
-														<p class="hotProduct_botbox_p2">流量包</p>
-													</div>
-												</div>
-											</div>
-										</a>
-									</div>
+							</section>
+							<div class="placeholderDiv"></div>
+							<section class="recommendProduct pad15">
+								<div class="recommendProduct_title">
+									<img src="./img/recommendProduct_icon.png">
+									<span>推荐产品</span>
 								</div>
-							</div>
-						</section>
-						<div class="placeholderDiv"></div>
-						<section class="recommendProduct pad15">
-							<div class="recommendProduct_title">
-								<img src="./img/recommendProduct_icon.png">
-								<span>推荐产品</span>
-							</div>
-							<div class="page flex js_show">
-								<div class="page__bd page__bd_spacing">
-									<!-- 接收数组遍历产品 -->
-									<div class="flex_box">
-										<div class="waterfall">
-											<a href="javascript:;" class="item">
-												<div class="weui-grid__icon item-content patentRelative">
-													<img src="./img/recommendProduct_left_top.png" alt="">
-													<div class="recommendProduct_box">
-														<p>1元500M流量包</p>
+								<div class="page flex js_show">
+									<div class="page__bd page__bd_spacing">
+										<!-- 接收数组遍历产品 -->
+										<div class="flex_box">
+											<div class="waterfall">
+												<a href="javascript:;" class="item">
+													<div class="weui-grid__icon item-content patentRelative">
+														<img src="./img/recommendProduct_left_top.png" alt="">
+														<div class="recommendProduct_box">
+															<p>1元500M流量包</p>
+														</div>
 													</div>
-												</div>
-											</a>
-											<a href="javascript:;" class="item">
-												<div class="weui-grid__icon item-content patentRelative">
-													<img src="./img/recommendProduct_right_bot.png" alt="">
-													<div class="recommendProduct_box">
-														<p>1元500M流量包</p>
+												</a>
+												<a href="javascript:;" class="item">
+													<div class="weui-grid__icon item-content patentRelative">
+														<img src="./img/recommendProduct_right_bot.png" alt="">
+														<div class="recommendProduct_box">
+															<p>1元500M流量包</p>
+														</div>
 													</div>
-												</div>
-											</a>
-										</div>
-										<div class="waterfall">
-											<a href="javascript:;" class="item">
-												<div class="weui-grid__icon item-content patentRelative">
-													<img src="./img/recommendProduct_left_bot.png" alt="">
-													<div class="recommendProduct_box">
-														<p>1元500M流量包</p>
+												</a>
+											</div>
+											<div class="waterfall">
+												<a href="javascript:;" class="item">
+													<div class="weui-grid__icon item-content patentRelative">
+														<img src="./img/recommendProduct_left_bot.png" alt="">
+														<div class="recommendProduct_box">
+															<p>1元500M流量包</p>
+														</div>
 													</div>
-												</div>
-											</a>
-											<a href="javascript:;" class="item">
-												<div class="weui-grid__icon item-content patentRelative">
-													<img src="./img/recommendProduct_right_top.png" alt="">
-													<div class="recommendProduct_box">
-														<p>1元500M流量包</p>
+												</a>
+												<a href="javascript:;" class="item">
+													<div class="weui-grid__icon item-content patentRelative">
+														<img src="./img/recommendProduct_right_top.png" alt="">
+														<div class="recommendProduct_box">
+															<p>1元500M流量包</p>
+														</div>
 													</div>
-												</div>
-											</a>
-										</div>
+												</a>
+											</div>
 
 
+										</div>
 									</div>
 								</div>
-							</div>
-						</section>
-						<div class="placeholderDiv"></div>
+							</section>
+							<div class="placeholderDiv"></div>
+						</div>
 					</div>
-				</div>
-				<!-- 业务分类 -->
-				<div class="weui-tab__panel" style="display:none">
-
-				</div>
-				<!-- 我的 -->
-				<div class="weui-tab__panel" style="display:none">
-
+					<!-- 业务分类 -->
+					<div class="weui_tab_bd_item" id="tab2">
+						<header class="textAlign headerH55">业务分类</header>
+						<div class="weui-flex">
+							<div class="weui-flex__item">
+								<div class="placeholder">weui</div>
+							</div>
+							<div class="weui-flex__item">
+								<div class="placeholder">weui</div>
+							</div>
+							<div class="weui-flex__item">
+								<div class="placeholder">weui</div>
+							</div>
+							<div class="weui-flex__item">
+								<div class="placeholder">weui</div>
+							</div>
+						</div>
+					</div>
+					<!-- 我的 -->
+					<div class="weui_tab_bd_item" id="tab3">
+	
+					</div>
 				</div>
 				<!-- 底部tab -->
 				<div class="weui-tabbar">
-					<a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+					<a class="weui-tabbar__item weui-bar__item_on" href="#tab1">
 						<img src="./img/tab_home_active.png" alt="" class="weui-tabbar__icon">
 						<p class="weui-tabbar__label">首页</p>
 					</a>
-					<a href="javascript:;" class="weui-tabbar__item">
+					<a class="weui-tabbar__item" href="#tab2">
 						<img src="./img/tab_business.png" alt="" class="weui-tabbar__icon">
 						<p class="weui-tabbar__label">业务分类</p>
 					</a>
-					<a href="javascript:;" class="weui-tabbar__item">
+					<a class="weui-tabbar__item" href="#tab3">
 						<img src="./img/tab_my.png" alt="" class="weui-tabbar__icon">
 						<p class="weui-tabbar__label">我的</p>
 					</a>
@@ -252,6 +269,14 @@
 				.addClass('weui-bar__item_on')
 				.siblings('.weui-bar__item_on')
 				.removeClass('weui-bar__item_on');
+
+			//内容切换
+			$(".weui-tab__panel .weui_tab_bd_item_active").removeClass('weui_tab_bd_item_active');
+			var data_toggle = jQuery(this).attr("href");
+			console.log(data_toggle);
+			$(data_toggle).addClass("weui_tab_bd_item_active");
+
+			//切换点击状态
 			let imgArr = [{
 					normal: 'tab_home.png',
 					active: 'tab_home_active.png'
