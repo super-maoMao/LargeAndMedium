@@ -389,6 +389,7 @@ header.headerH55 {
     color: #5B93E9;
 }
 
+
 /* 切换内容 */
 .weui_tab_bd_item {
     display: none;
@@ -397,4 +398,230 @@ header.headerH55 {
 
 .weui_tab_bd_item.weui_tab_bd_item_active {
     display: block;
+}
+
+/* 业务分类 */
+.weui_header_icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.weui_header_label {
+    font-size: 11px;
+    color: #666666;
+    line-height: 1.4;
+}
+
+.headerIcon.weui-flex .weui-flex__item {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.margin_bot {
+    margin-bottom: 15px;
+}
+
+.business_content {
+    padding: 10px 0px;
+    color: #A570FE;
+    font-weight: bold;
+    position: relative;
+}
+
+.business_content>img {
+    width: 17px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.business_content>span {
+    margin-left: 23px;
+}
+
+.business_section .weui-form-preview__bd {
+    padding: 0;
+}
+
+.img100 {
+    width: 100%;
+}
+
+.business_rightbox {
+    width: 100%;
+    padding-left: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 66.6%;
+}
+
+.business_rightbox p {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    display: -webkit-box;
+    color: #666;
+    margin: 0;
+    position: relative;
+}
+
+.business_rightbox p:first-child {
+    height: 15px;
+    line-height: 15px;
+    font-size: 14px;
+    color: #000;
+    margin: 0 0 10px;
+}
+
+.business_rightbox p:nth-child(2) {
+    height: 34px;
+    line-height: 17px;
+}
+
+.psize12 {
+    font-size: 12px;
+}
+
+.lookmore {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    background: #fff;
+    text-align: right;
+    /* width: 100%; */
+    color: #5B93E9;
+    border-bottom: 1px solid #5B93E9;
+    font-size: 11px;
+}
+
+.lookmoreplashloder {
+    color: #fff;
+    left: 0;
+    border: 0;
+}
+
+.zindex10 {
+    z-index: 10;
+}
+
+.weui-form-preview__bd>div {
+    padding: 15px 0px;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.weui-form-preview__bd>div:first-child {
+    padding-top: 0;
+}
+
+.rightbox_title {
+    color: #FF0000;
+    font-size: 11px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+
+.business_rightbox .rightbox {
+    width: 100%;
+}
+
+.business_rightbox .rightbox span {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 50%;
+    text-overflow: ellipsis;
+}
+
+
+
+/* 我的  个人中心模块 */
+.header_box {
+    height: 136px;
+    display: flex;
+    align-content: center;
+    padding: 30px 21px;
+    position: relative;
+}
+
+.header_box .header_box_left {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.header_box .header_box_right {
+    display: inline-block;
+    height: 75px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header_box .header_box_right>p {
+    margin: 0;
+}
+
+.header_box .header_box_right>p:nth-child(1) {
+    font-size: 20px;
+    color: #000;
+}
+
+.header_box .header_box_right>p:nth-child(2) {
+    font-size: 13px;
+    color: #7F7F7F;
+}
+
+.header_bac {
+    background: #F6F6F6;
+    border-bottom: 1px #D5D5D5 solid;
+}
+
+.header_box_rightbox {
+    position: absolute;
+    right: 21px;
+    text-align: center;
+    font-size: 10px;
+    top: 36px;
+    color: #7F7F7F;
+}
+
+.header_box_rightbox p {
+    margin: 5px 0px;
+}
+
+.header_box_rightbox>img {
+    width: 18px;
+}
+
+.my_content_box .weui-cell:before {
+    left: 52px;
+    border-color: #D5D5D5;
+}
+
+.my_content_box .weui-cells:after {
+    border-color: #D5D5D5;
+}
+
+.my_content_box .weuicell_img {
+    width: 20px;
+    margin-right: 16px;
+    display: block;
+}
+
+.my_content_box .weui-cell_primary p {
+    margin: 0;
 }
