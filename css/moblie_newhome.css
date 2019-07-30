@@ -541,6 +541,7 @@ header.headerH55 {
     overflow: hidden;
     width: 50%;
     text-overflow: ellipsis;
+    display: inline-block;
 }
 
 

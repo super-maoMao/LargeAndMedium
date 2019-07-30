@@ -1,0 +1,111 @@
+/* title */
+.page {
+    bottom: 0px;
+    background: #F6F6F6;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.headerH55 {
+    height: 55px;
+    line-height: 55px;
+}
+
+header.headerH55 {
+    font-size: 18px;
+    color: #000;
+}
+
+.patentRelative {
+    position: relative;
+}
+
+.header_bac {
+    background: #F6F6F6;
+}
+
+/* 头部内容 */
+.product_box_head {
+    background: url('../img/business/business_product/product_head.png') no-repeat center center;
+    background-size: 100% 100%;
+    height: 149px;
+    position: relative;
+}
+
+.product_box_head_rightbox {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product_box_head_rightbox>p {
+    margin: 0 0 5px;
+}
+
+.product_rightbox_smallfont {
+    font-size: 12px;
+}
+
+.product_box_content .weui-panel__hd:after {
+    left: 0;
+}
+
+.product_box_content .weui-panel__hd {
+    padding: 5px 16px;
+}
+
+.product_box_content .weui-form-preview__label,
+.product_box_content .weui-form-preview__value {
+    color: #7F7F7F;
+    font-weight: normal;
+}
+
+.product_box_content {
+    margin-bottom: 10px;
+}
+
+.product_box_content .weui-media-box:before {
+    height: 0;
+    border: none;
+}
+
+.product_box_content .weui-media-box__desc {
+    color: #7F7F7F;
+    font-size: .9em;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+footer .weui-btn_cell {
+    padding: 10px;
+    font-weight: normal;
+    color: #fff;
+    background: #5B93E9;
+}
+
+footer .weui-btn_cell:active,
+footer .weui-btn_cell:hover {
+    background: #5B93E9;
+    color: #fff;
+}
+
+.fixedIcon {
+    width: 50px;
+}
+
+.fixeBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 16px;
+}
