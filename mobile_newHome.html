@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>西安移和微销</title>
+	<title>西安移动和微销</title>
 	<META HTTP-EQUIV="pragma" CONTENT="no-cache搜索" />
 	<META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate" />
 	<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT" />
@@ -30,7 +30,7 @@
 				<div class="weui-tab__panel">
 					<!-- 首页 -->
 					<div class=" weui_tab_bd_item weui_tab_bd_item_active" id="tab1">
-						<header class="textAlign headerH55">西安移动和微销</header>
+						<!-- <header class="textAlign headerH55">西安移动和微销</header> -->
 						<!-- 轮播图 -->
 						<section>
 							<div class="swiper-container">
@@ -208,10 +208,10 @@
 					</div>
 					<!-- 业务分类 -->
 					<div class="weui_tab_bd_item" id="tab2">
-						<header class="textAlign headerH55">业务分类</header>
+						<!-- <header class="textAlign headerH55">业务分类</header> -->
 						<!-- 头部内容icon -->
 						<section>
-							<div class="weui-flex headerIcon pad15 margin_bot">
+							<div class="weui-flex headerIcon pad15 margin_bot martop15">
 								<div class="weui-flex__item">
 									<div class="placeholder">
 										<img src="./img/business/bus_icon1.png" alt="" class="weui_header_icon">
@@ -309,8 +309,8 @@
 											不可累积10包5G（23:00-07:00生效），当月清零，
 											不可累积
 											<span class="lookmore lookmoreplashloder">查看详情</span>
-											<span class="lookmore zindex10"
-												href="./mobile_product_detail.html">查看详情</span>
+											<a class="lookmore zindex10"
+												href="./mobile_product_detail.html">查看详情</a>
 										</p>
 									</div>
 								</div>
@@ -329,8 +329,8 @@
 											不可累积10包5G（23:00-07:00生效），当月清零，
 											不可累积
 											<span class="lookmore lookmoreplashloder">查看详情</span>
-											<span class="lookmore zindex10"
-												href="./mobile_product_detail.html">查看详情</span>
+											<a class="lookmore zindex10"
+												href="./mobile_product_detail.html">查看详情</a>
 										</p>
 									</div>
 								</div>
@@ -340,7 +340,7 @@
 					</div>
 					<!-- 我的 -->
 					<div class="weui_tab_bd_item" id="tab3">
-						<header class="textAlign headerH55 header_bac">我的</header>
+						<!-- <header class="textAlign headerH55 header_bac">我的</header> -->
 						<!-- 头部内容 -->
 						<div class="header_box">
 							<div class="header_box_left">
@@ -471,6 +471,27 @@
 					});
 				}
 			});
+
+			//切换页面title  $(document).attr("title","修改内容");
+			let titleArr = [{
+					id: '#tab1',
+					title: '西安移动和微销'
+				},
+				{
+					id: '#tab2',
+					title: '业务分类'
+				},
+				{
+					id: '#tab3',
+					title: '我的'
+				}
+			]
+			titleArr.forEach((val, index) => {
+				if (val.id == data_toggle) {
+					$(document).attr("title", val.title);
+				}
+			});
+
 
 		});
 

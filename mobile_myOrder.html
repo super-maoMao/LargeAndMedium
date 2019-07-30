@@ -1,0 +1,162 @@
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <title>我的订单</title>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache搜索" />
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate" />
+    <META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT" />
+    <META HTTP-EQUIV="expires" CONTENT="0" />
+    <meta name="viewport"
+        content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/weui.min.css" />
+    <link rel="stylesheet" href="./css/moblie_myorder.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <style>
+        html,
+        body,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body ontouchstart class="backgroundColor">
+    <div class="page">
+        <div class="page__bd" style="height: 100%;">
+            <!-- 标题 -->
+            <!-- <header class="textAlign headerH55 header_bac">我的订单</header> -->
+            <!-- 头部tab选项 -->
+            <div class="weui-tab myorder_tab">
+                <div class="weui-navbar">
+                    <a class="weui-navbar__item weui-bar__item_on" href="#tab1">
+                        进行中
+                    </a>
+                    <a class="weui-navbar__item" href="#tab2">
+                        办理成功
+                    </a>
+                    <a class="weui-navbar__item" href="#tab3">
+                        办理失败
+                    </a>
+                </div>
+                <div class="weui-tab__panel myorder_content">
+                    <div id="tab1" class="weui_tab_bd_item weui_tab_bd_item_active">
+                        <div class="bac_white">
+                            <div class="weui-flex weui-flex_center">
+                                <div class="weui-flex__item">
+                                    <div class="placeholder">业务名称</div>
+                                </div>
+                                <div class="weui-flex__item">
+                                    <div class="placeholder">办理时间</div>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item  weui-flex">
+                                    <span class="weui-form-preview__value weui-flex__item">夜猫包10元基础包 </span>
+                                    <span class="weui-form-preview__value weui-flex__item">2019.06.05 14:00</span>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item  weui-flex">
+                                    <span class="weui-form-preview__value weui-flex__item">宽带办理-50M </span>
+                                    <span class="weui-form-preview__value weui-flex__item">2019.06.05 14:00</span>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item  weui-flex">
+                                    <span class="weui-form-preview__value weui-flex__item">套餐变更 </span>
+                                    <span class="weui-form-preview__value weui-flex__item">2019.06.05 14:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="weui_tab_bd_item">
+                        <div class="bac_white">
+                            <div class="weui-flex weui-flex_center">
+                                <div class="weui-flex__item">
+                                    <div class="placeholder">业务名称</div>
+                                </div>
+                                <div class="weui-flex__item">
+                                    <div class="placeholder">办理时间</div>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item  weui-flex">
+                                    <span class="weui-form-preview__value weui-flex__item">夜猫包10元基础包 </span>
+                                    <span class="weui-form-preview__value weui-flex__item">2019.06.05 14:00</span>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item  weui-flex">
+                                    <span class="weui-form-preview__value weui-flex__item">宽带办理-50M </span>
+                                    <span class="weui-form-preview__value weui-flex__item">2019.06.05 14:00</span>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item  weui-flex">
+                                    <span class="weui-form-preview__value weui-flex__item">套餐变更 </span>
+                                    <span class="weui-form-preview__value weui-flex__item">2019.06.05 14:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="weui_tab_bd_item">
+                        <div class="bac_white">
+                            <div class="weui-flex weui-flex_center">
+                                <div class="weui-flex__item">
+                                    <div class="placeholder">业务名称</div>
+                                </div>
+                                <div class="weui-flex__item">
+                                    <div class="placeholder">办理时间</div>
+                                </div>
+                                <div class="weui-flex__item">
+                                    <div class="placeholder">失败原因</div>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item  weui-flex">
+                                    <span class="weui-form-preview__value weui-flex__item">夜猫包10元基础包 </span>
+                                    <span class="weui-form-preview__value weui-flex__item">2019.06.05 14:00</span>
+                                    <span class="weui-form-preview__value weui-flex__item">接口返回失败</span>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item  weui-flex">
+                                    <span class="weui-form-preview__value weui-flex__item">宽带办理-50M </span>
+                                    <span class="weui-form-preview__value weui-flex__item">2019.06.05 14:00</span>
+                                    <span class="weui-form-preview__value weui-flex__item">接口返回失败</span>
+                                </div>
+                            </div>
+                            <div class="weui-form-preview__bd">
+                                <div class="weui-form-preview__item  weui-flex">
+                                    <span class="weui-form-preview__value weui-flex__item">套餐变更 </span>
+                                    <span class="weui-form-preview__value weui-flex__item">2019.06.05 14:00</span>
+                                    <span class="weui-form-preview__value weui-flex__item">接口返回失败</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.weui-navbar__item').on('click', function () {
+            $(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass(
+                'weui-bar__item_on');
+
+            //内容切换
+            $(".weui-tab__panel .weui_tab_bd_item_active").removeClass('weui_tab_bd_item_active');
+            var data_toggle = jQuery(this).attr("href");
+            $(data_toggle).addClass("weui_tab_bd_item_active");
+        });
+    });
+</script>
+
+</html>
