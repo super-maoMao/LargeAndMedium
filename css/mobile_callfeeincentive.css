@@ -1,0 +1,99 @@
+/* title */
+.page {
+    bottom: 0px;
+    background: #F6F6F6;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.headerH55 {
+    height: 55px;
+    line-height: 55px;
+}
+
+header.headerH55 {
+    font-size: 18px;
+    color: #000;
+}
+
+.patentRelative {
+    position: relative;
+}
+
+.header_bac {
+    background: #F6F6F6;
+}
+
+.bac_white {
+    background-color: #fff;
+}
+
+.callfee_box .weui-form-preview__label {
+    font-weight: normal;
+    color: #666;
+    height: 1.41176471em;
+    line-height: 1.41176471;
+    margin-bottom: 0;
+}
+
+.callfee_box input {
+    color: #999999;
+}
+
+.callfee_box .weui-form-preview__hd:after {
+    right: 16px;
+}
+
+.callfee_box section .allrich {
+    color: #666666;
+    font-size: 12px;
+    text-align: center;
+}
+
+.callfee_box section {
+    margin-bottom: 50px;
+}
+
+/* 时间的 plasholder */
+.inputdate {
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    text-align: center;
+}
+
+/* input[type="date"]:before {
+    color: #A9A9A9;
+    content: attr(placeholder);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+
+
+input[type="date"].full:before {
+    color: black;
+    content: "" !important;
+}/*
+
+/* footer */
+footer .weui-btn_primary {
+    background-color: #5B93E9;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+footer .weui-btn_primary:active,
+footer .weui-btn_primary:hover,
+footer .weui-btn_primary:not(.weui-btn_disabled):active {
+    background-color: #5B93E9;
+    color: #fff;
+}

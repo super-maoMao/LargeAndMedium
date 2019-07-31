@@ -1,0 +1,130 @@
+/* title */
+.page {
+    bottom: 0px;
+    background: #F6F6F6;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.headerH55 {
+    height: 55px;
+    line-height: 55px;
+}
+
+header.headerH55 {
+    font-size: 18px;
+    color: #000;
+}
+
+.patentRelative {
+    position: relative;
+}
+
+.header_bac {
+    background: #F6F6F6;
+}
+
+.bac_white {
+    background-color: #fff;
+}
+
+.weui-flex_center {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #D5D5D5;
+    font-weight: 700;
+}
+
+.myorder_content .weui-form-preview__value {
+    text-align: center;
+}
+
+.myorder_content .weui-form-preview__bd {
+    padding: 10px;
+    color: #666666;
+    border-bottom: 1px solid #D5D5D5;
+    font-size: 12px;
+}
+
+.weui-flex_num2 {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3;
+}
+
+.weui-flex_num2.taleft {
+    text-align: left;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #5B93E9;
+}
+
+footer .weui-form-preview__btn_primary,
+footer .weui-form-preview__btn_primary:active,
+footer .weui-form-preview__btn_primary:hover {
+    background-color: #5B93E9;
+    color: #fff;
+}
+
+footer .weui-form-preview__btn_default:active,
+footer .weui-form-preview__btn_default:hover {
+    background-color: #fff;
+}
+
+#dialogs .weui-dialog {
+    width: 80%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+#dialogs .weui-dialog .weui-dialog__hd {
+    background: #5B93E9;
+    color: #fff;
+    padding: 10px 24px;
+}
+
+#dialogs .weui-dialog .weui-dialog__bd {
+    padding-top: 18px;
+    color: #333333;
+    font-size: 14px;
+}
+
+#dialogs .weui-dialog .weui-dialog__hd .weui-dialog__title {
+    font-size: 15px;
+}
+
+#dialogs .weui-dialog .weui-dialog_footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 20px;
+}
+
+#dialogs .weui-dialog .weui-dialog_footer .weui-dialog__btn {
+    flex: none;
+    width: 30%;
+    background-color: #5B93E9;
+    color: #fff;
+    padding: 10px;
+    height: 30px;
+    line-height: 10px;
+    border-radius: 15px;
+    font-weight: normal;
+    font-size: 13px;
+}
