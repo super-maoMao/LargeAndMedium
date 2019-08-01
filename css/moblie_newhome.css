@@ -544,7 +544,7 @@ header.headerH55 {
     display: inline-block;
 }
 
-.martop15{
+.martop15 {
     margin-top: 15px;
 }
 
@@ -629,4 +629,20 @@ header.headerH55 {
 
 .my_content_box .weui-cell_primary p {
     margin: 0;
+}
+
+/* 普通店员   */
+.starPonit {
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ordinary_namebox {
+    position: relative;
+}
+
+.ordinary_namebox span {
+    margin-right: 10px;
 }
