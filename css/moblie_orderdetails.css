@@ -86,37 +86,37 @@ footer .weui-form-preview__btn_default:hover {
     background-color: #fff;
 }
 
-#dialogs .weui-dialog {
+.dialogs .weui-dialog {
     width: 80%;
     left: 50%;
     right: 0;
     transform: translate(-50%, -50%);
 }
 
-#dialogs .weui-dialog .weui-dialog__hd {
+.dialogs .weui-dialog .weui-dialog__hd {
     background: #5B93E9;
     color: #fff;
     padding: 10px 24px;
 }
 
-#dialogs .weui-dialog .weui-dialog__bd {
+.dialogs .weui-dialog .weui-dialog__bd {
     padding-top: 18px;
     color: #333333;
     font-size: 14px;
 }
 
-#dialogs .weui-dialog .weui-dialog__hd .weui-dialog__title {
+.dialogs .weui-dialog .weui-dialog__hd .weui-dialog__title {
     font-size: 15px;
 }
 
-#dialogs .weui-dialog .weui-dialog_footer {
+.dialogs .weui-dialog .weui-dialog_footer {
     text-align: center;
     display: flex;
     justify-content: center;
     padding: 10px 10px 20px;
 }
 
-#dialogs .weui-dialog .weui-dialog_footer .weui-dialog__btn {
+.dialogs .weui-dialog .weui-dialog_footer .weui-dialog__btn {
     flex: none;
     width: 30%;
     background-color: #5B93E9;
@@ -127,4 +127,28 @@ footer .weui-form-preview__btn_default:hover {
     border-radius: 15px;
     font-weight: normal;
     font-size: 13px;
+}
+
+.weui-dialog_inputbox input {
+    border: 1px solid #D5D5D5;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.weui-dialog_inputbox {
+    padding-top: 20px;
+}
+
+.codeMsg,
+.codeMsg2 {
+    font-size: 13px;
+    color: #7F7F7F;
+    padding: 10px;
+    text-align: right;
+    margin: 0;
+}
+
+#iosDialog2 .weui-dialog__bd {
+    padding-bottom: 5px;
 }

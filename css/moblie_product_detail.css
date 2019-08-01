@@ -109,3 +109,143 @@ footer .weui-btn_cell:hover {
     bottom: 80px;
     right: 16px;
 }
+
+.dialogs .weui-dialog {
+    width: 80%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.dialogs .weui-dialog .weui-dialog__hd {
+    background: #5B93E9;
+    color: #fff;
+    padding: 10px 24px;
+}
+
+.dialogs .weui-dialog .weui-dialog__bd {
+    padding-top: 18px;
+    color: #333333;
+    font-size: 14px;
+}
+
+.dialogs .weui-dialog .weui-dialog__hd .weui-dialog__title {
+    font-size: 14px;
+}
+
+.dialogs .weui-dialog .weui-dialog_footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 20px;
+}
+
+.dialogs .weui-dialog .weui-dialog_footer .weui-dialog__btn {
+    flex: none;
+    width: 30%;
+    background-color: #5B93E9;
+    color: #fff;
+    padding: 10px;
+    height: 30px;
+    line-height: 10px;
+    border-radius: 15px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+/* 弹框1 */
+.dialogs#dialogs1 .weui-dialog {
+    width: 50%;
+}
+
+.dialogs#dialogs1 .weui-dialog__bd>p {
+    border-bottom: 1px solid #d5d5d5;
+    margin: 0;
+    padding: 5px 0;
+    color: #333;
+    font-size: 13px;
+}
+
+.dialogs#dialogs1 .weui-dialog__bd {
+    padding: 0;
+}
+
+.dialogs .weui-dialog__hd {
+    position: relative;
+}
+
+.dialogs .weui-dialog__hd .weui-dialog__close {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.poster_box .footer_box {
+    color: #333;
+    font-size: 13px;
+}
+
+.poster {
+    position: relative;
+}
+
+.poster>img {
+    width: 100%;
+}
+
+.poster .imgPositon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.poster .imgPositon img {
+    width: 50%;
+}
+
+.poster_bom_icon {
+    font-size: 13px;
+    color: #333;
+    padding: 15px 0;
+}
+
+.poster_bom_icon div:first-child img {
+    width: 20px;
+}
+
+.poster_bom_icon div:last-child img {
+    width: 19px;
+    height: 19px;
+}
+
+.Qrcode_box .footer_box {
+    padding-top: 15px;
+    color: #666;
+    font-size: 13px;
+}
+
+.Qrcode_box .footer_box>img,
+.poster_box .footer_box>img {
+    width: 22px;
+    margin-bottom: 5px;
+}
+
+.Qrcode_box .footer_box p {
+    margin: 0;
+}
+
+.dialogs#dialogs2 .weui-dialog__bd {
+    padding: 24px 15px;
+}
+
+.link_top_title {
+    color: #7F7F7F;
+    font-size: 13px;
+}
+
+.link_top_content {
+    color: #333333;
+    font-size: 14px;
+    padding-top: 15px;
+}

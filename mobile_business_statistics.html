@@ -1,0 +1,343 @@
+<html lang="zh">
+
+<head>
+	<meta charset="utf-8" />
+	<title>推荐业务统计</title>
+	<META HTTP-EQUIV="pragma" CONTENT="no-cache搜索" />
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate" />
+	<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT" />
+	<META HTTP-EQUIV="expires" CONTENT="0" />
+	<meta name="viewport"
+		content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./css/weui.min.css" />
+	<link rel="stylesheet" href="./css/mobile_business_statistics.css" />
+	<style>
+		html,
+		body,
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+
+<body ontouchstart class="bac_white">
+	<div class="page bac_white">
+		<div class="page__bd" style="height: 100%;">
+			<div class="weui-tab myorder_tab">
+				<div class="weui-navbar">
+					<a class="weui-navbar__item weui-bar__item_on" href="#tab1">
+						进行中
+					</a>
+					<a class="weui-navbar__item" href="#tab2">
+						已完成
+					</a>
+				</div>
+				<div class="weui-tab__panel myorder_content">
+					<div id="tab1" class="weui_tab_bd_item weui_tab_bd_item_active">
+						<div class=" callfee_box">
+							<!-- 时间选择 -->
+							<div class="weui-form-preview__hd weui-flex">
+								<label class="weui-form-preview__label weui-flex__item"
+									style="text-align: left">时间段</label>
+								<div class="weui-flex weui-flex__item" style="flex:3">
+									<input type="text" class="weui-input weui-flex__item inputdate" placeholder="开始日期"
+										id="starttime" />
+									<input type="text" class="weui-input weui-flex__item inputdate" placeholder="结束日期"
+										id="endtime" />
+								</div>
+								<label class="weui-form-preview__label weui-flex__item downlist">下载清单</label>
+							</div>
+							<!-- 类别选择 -->
+							<section class="content_box_business">
+								<div class="weui-flex pad20">
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label active_item">流量业务</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">套餐办理</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">卡号业务</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">宽带业务</p>
+										</div>
+									</div>
+								</div>
+								<div class="weui-flex pad20">
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">终端办理</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">家庭业务</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">政企业务</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">其他业务</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div>
+							<div class="content_box_weui content_title_box">
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">办理号码 </span>
+										<span class="weui-form-preview__value weui-flex__item">业务名称</span>
+										<span class="weui-form-preview__value weui-flex__item">办理时间</span>
+									</div>
+								</div>
+							</div>
+							<div class="content_box_weui">
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div id="tab2" class="weui_tab_bd_item">
+						<div class=" callfee_box">
+							<!-- 时间选择 -->
+							<div class="weui-form-preview__hd weui-flex">
+								<label class="weui-form-preview__label weui-flex__item"
+									style="text-align: left">时间段</label>
+								<div class="weui-flex weui-flex__item" style="flex:3">
+									<input type="text" class="weui-input weui-flex__item inputdate" placeholder="开始日期"
+										id="starttime2" />
+									<input type="text" class="weui-input weui-flex__item inputdate" placeholder="结束日期"
+										id="endtime2" />
+								</div>
+								<label class="weui-form-preview__label weui-flex__item downlist">下载清单</label>
+							</div>
+							<!-- 类别选择 -->
+							<section class="content_box_business">
+								<div class="weui-flex pad20">
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label active_item">流量业务</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">套餐办理</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">卡号业务</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">宽带业务</p>
+										</div>
+									</div>
+								</div>
+								<div class="weui-flex pad20">
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">终端办理</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">家庭业务</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">政企业务</p>
+										</div>
+									</div>
+									<div class="weui-flex__item">
+										<div class="placeholder">
+											<p class="weui_header_label">其他业务</p>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div>
+							<div class="content_box_weui content_title_box">
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">办理号码 </span>
+										<span class="weui-form-preview__value weui-flex__item">业务名称</span>
+										<span class="weui-form-preview__value weui-flex__item">办理时间</span>
+									</div>
+								</div>
+							</div>
+							<div class="content_box_weui">
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+								<div class="weui-form-preview__bd">
+									<div class="weui-form-preview__item  weui-flex">
+										<span class="weui-form-preview__value weui-flex__item">134****8986</span>
+										<span class="weui-form-preview__value weui-flex__item">新入网</span>
+										<span class="weui-form-preview__value weui-flex__item">06月07日12:20</span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+
+				<div class="weui-flex tacenter">
+					<span onclick="previouspage()"><img src="./img/jiantou_shangyiye.png"></span>
+					<div class="weui-flex__item">第1页</div>
+					<div class="weui-flex__item">共34页</div>
+					<div class="weui-flex__item">共768条记录</div>
+					<span onclick="nextpage()"><img src="./img/jiantou_xiayiye.png"></span>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./laydate/laydate.js"></script>
+<script src="./js/swiper.min.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script type="text/javascript">
+	// 日期选择
+	laydate.render({
+		elem: '#endtime', //指定元素
+	});
+	laydate.render({
+		elem: '#starttime', //指定元素
+	});
+	laydate.render({
+		elem: '#endtime2', //指定元素
+	});
+	laydate.render({
+		elem: '#starttime2', //指定元素
+	});
+
+	// 翻页选择：
+	function nextpage() {
+		alert('next');
+	}
+	// 翻页选择：
+	function previouspage() {
+		alert('pervious');
+	}
+
+	$(function () {
+		// 头部tab切换
+		$('.weui-navbar__item').on('click', function () {
+			$(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass(
+				'weui-bar__item_on');
+
+			//内容切换
+			$(".weui-tab__panel .weui_tab_bd_item_active").removeClass('weui_tab_bd_item_active');
+			var data_toggle = jQuery(this).attr("href");
+			$(data_toggle).addClass("weui_tab_bd_item_active");
+		});
+		// 内容部分切换
+		$('.content_box_business .weui-flex .weui-flex__item p').on('click', function () {
+			$(this).addClass('active_item').parents('.weui-flex__item')
+				.siblings().children().children().removeClass('active_item');
+			$(this).parents('.weui-flex')
+				.siblings().children('.weui-flex__item').siblings().children().children().removeClass(
+					'active_item');
+
+			//内容切换或者清空
+		})
+	});
+</script>
+
+</html>
