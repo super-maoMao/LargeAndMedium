@@ -28,17 +28,92 @@
 		<div class="page__bd" style="height: 100%;">
 			<div class="weui-cells weui-cells_form">
 				<div class="weui-cell">
-					<div class="weui-cell__hd weui-flex__item"><label class="weui-label">姓名</label></div>
-					<div class="weui-cell__bd name_box weui-flex__item" style="flex:2">
+					<div class="weui-cell__bd weui-cell-label">
+						<label class="weui-label">姓名</label>
+					</div>
+					<div class="weui-cell__bd name_box weui-flexnum">
 						<input class="weui-input" type="text" placeholder="请输入姓名">
 					</div>
 				</div>
-				<div class="weui-cell weui-cell_switch">
-					<div class="weui-cell__hd  weui-flex__item">
-						是否有实体经营
+				<div class="weui-cell">
+					<div class="weui-cell__bd weui-cell-label">
+						<label class="weui-label">是否有实体经营</label>
 					</div>
-					<div class="weui-cell__ft  weui-flex__item" style="flex:2;text-align: left">
+					<div class="weui-cell__bd weui-flexnum">
 						<input class="weui-switch" type="checkbox">
+					</div>
+				</div>
+				<div class="weui-cell weui-cell_select">
+					<div class="weui-cell__bd weui-cell-label">
+						<label class="weui-label">选择模式</label>
+					</div>
+					<div class="weui-cell__bd  weui-flexnum">
+						<select class="weui_option_select" name="select1">
+							<option selected="" value="1">个体经营户</option>
+							<option value="2">连锁商超</option>
+						</select>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd weui-cell-label">
+						<label class="weui-label">店铺名称</label>
+					</div>
+					<div class="weui-cell__bd name_box weui-flexnum">
+						<input class="weui-input" type="text" placeholder="请输入店铺名称">
+					</div>
+				</div>
+				<footer>
+					<div class="btn_bottom">
+						<a href="javascript:;" class="weui-btn fontwn" id="showIOSDialog1">注册</a>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!-- 弹框 -->
+		<div id="dialogs1" class="dialogs dialogs_1">
+			<div class="js_dialog" id="iosDialog1" style="display:none;">
+				<div class="weui-mask"></div>
+				<div class="weui-dialog">
+					<img src="../img/ordinary_clerk/clerk_bc3.png" class="positionsuccessIcon">
+					<div class="weui-dialog__hd"><strong class="weui-dialog__title">注册成功</strong></div>
+					<div class="weui-dialog__bd">尊敬的用户，恭喜您，已经成功注册西安移动和微销店员，马上去查看您的专属店铺吧！</div>
+					<div class="weui-dialog_footer">
+						<a href="javascript:;" class="weui-dialog__btn">进入店铺</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 注册确认验证码 -->
+		<div id="dialogs2" class="dialogs dialogs_2">
+			<div class="js_dialog" id="iosDialog2"  style="display:none;">
+				<div class="weui-mask"></div>
+				<div class="weui-dialog">
+					<div class="weui-dialog__hd"><strong class="weui-dialog__title">注册确认</strong></div>
+					<div class="weui-dialog__bd">
+						尊敬的用户，您正在注册西安移动和微销店员，注册成功后，您将拥有自己的专属店铺！
+						<div class="weui-dialog_inputbox">
+							<!-- <input class="weui-input nowInput" type="tel" maxlength="1">
+							<input class="weui-input nowInput" type="tel" maxlength="1">
+							<input class="weui-input nowInput" type="tel" maxlength="1">
+							<input class="weui-input nowInput" type="tel" maxlength="1">
+							<input class="weui-input nowInput" type="tel" maxlength="1">
+							<input class="weui-input nowInput" type="tel" maxlength="1"> -->
+							<div class="val-box" id="val-box">
+								<input type="text" id="val-code-input" maxlength="6" onkeyup="checkForNum(this)"
+									onselectstart="return false;" onblur="checkForNum(this)">
+								<div name="val-item"></div>
+								<div name="val-item"></div>
+								<div name="val-item"></div>
+								<div name="val-item"></div>
+								<div name="val-item"></div>
+								<div name="val-item"></div>
+							</div>
+						</div>
+						<p class="codeMsg">重新获取<span class="codeNum">60s</span></p>
+						<p class="codeMsg2" onclick="getcodeMsg()" style="display:none">重新获取</p>
+					</div>
+					<div class="weui-dialog_footer">
+						<a href="javascript:;" class="weui-dialog__btn">确认</a>
 					</div>
 				</div>
 			</div>
@@ -48,7 +123,97 @@
 <script src="../js/jquery-3.4.1.min.js"></script>
 <script src="../js/swiper.min.js"></script>
 <script type="text/javascript">
+	$(function () {
+		// 弹框
+		let $iosDialog1 = $('#iosDialog1');
+		let $iosDialog2 = $('#iosDialog2');
+		$('.dialogs.dialogs_2').on('click', '.weui-dialog__btn', function () {
+			$(this).parents('.js_dialog').fadeOut(200);
+			//办理成功弹窗成功弹窗：
+			$iosDialog1.fadeIn(200);
+		});
+		$('#showIOSDialog1').on('click', function () {
+			$iosDialog2.fadeIn(200);
+			doTimer();
+		});
+		$('.dialogs.dialogs_1').on('click', '.weui-dialog__btn', function () {
+			$(this).parents('.js_dialog').fadeOut(200);
+		});
+		$('.dialogs.dialogs_2').on('click', '.weui-dialog__btn', function () {
+			$(this).parents('.js_dialog').fadeOut(200);
+		});
 
+	});
+	let num = 60; /*倒计时的数量*/
+	let timer; /* 倒计时*/
+	//倒计时
+	function doTimer() {
+		$('.codeMsg').show();
+		$('.codeMsg2').hide();
+		timer = setInterval(() => {
+			num--;
+			$('.codeMsg .codeNum').text(num + 's');
+			if (num == 0) {
+				clearInterval(timer);
+				$('.codeMsg').hide();
+				$('.codeMsg2').show();
+				num = 60;
+			}
+		}, 1000)
+	}
+	//获取验证码
+	function getcodeMsg() {
+		doTimer();
+	}
+
+
+	// 验证码输入
+	var valCodeInput = $("#val-code-input");
+	var valCodeItems = $("div[name='val-item']");
+	var regex = /^[\d]+$/;
+	var valCodeLength = 0;
+	$('#val-box').on('click', function () {
+		console.log("聚焦")
+		valCodeInput.focus();
+
+	})
+
+	// input输入框即时反映
+	valCodeInput.on('input propertychange change', function (e) {
+		valCodeLength = valCodeInput.val().length;
+		if (valCodeInput.val() && regex.test(valCodeInput.val())) {
+			$(valCodeItems[valCodeLength - 1]).removeClass('available');
+			$(valCodeItems[valCodeLength - 1]).addClass('available');
+			$(valCodeItems[valCodeLength - 1]).text(valCodeInput.val().substring(valCodeLength - 1,
+				valCodeLength));
+		}
+	})
+	// 点击获取验证码或点击第一个数字输入框时获取焦点,添加available类样式
+	$("div[name='val-item']").on("tap", function () {
+		$(valCodeInput).focus();
+		$(valCodeItems[0]).addClass('available');
+	})
+	// 删除键
+	$(this).on('keyup', function (e) {
+		if (e.keyCode === 8) {
+			$(valCodeItems[valCodeLength]).text("");
+			if (valCodeLength !== 0) {
+				$(valCodeItems[valCodeLength]).removeClass('available');
+			}
+		}
+	});
+	// 当验证码输入四位时直接跳转（在此验证验证码是否正确
+	$(valCodeInput).on("input propertychange", function () {
+		if (valCodeInput.val().length == 6) {
+			console.log($('#val-code-input').val());
+			// $('.dialogs.dialogs_2 .weui-dialog__btn').parents('.js_dialog').fadeOut(200);
+		}
+	})
+
+	//把所有输入的不是数字的字符转换为空值
+	function checkForNum(obj) {
+		obj.value = obj.value.replace(/[\D]/g, '');
+	}
 </script>
 
 </html>

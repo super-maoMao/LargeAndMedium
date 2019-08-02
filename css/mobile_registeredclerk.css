@@ -1,0 +1,122 @@
+/* title */
+.page {
+    bottom: 0px;
+    background: #ffffff;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.headerH55 {
+    height: 55px;
+    line-height: 55px;
+}
+
+header.headerH55 {
+    font-size: 18px;
+    color: #000;
+}
+
+.patentRelative {
+    position: relative;
+}
+
+.header_bac {
+    background: #f6f6f6;
+}
+
+/* 头部 */
+.registered_clerk_box {
+    position: relative;
+}
+
+.registered_clerk_box .imgW {
+    width: 100%;
+}
+
+.registered_clerk_box .clerk_box_icon {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 25px;
+    width: 105px;
+}
+
+.clerk_box_content {
+    background: #fff;
+    z-index: 10;
+    min-height: 339px;
+    border-radius: 10px;
+    position: absolute;
+    top: 75%;
+    width: calc(100% - 30px);
+    left: 15px;
+    box-shadow: 5px 5px 10px rgba(107, 183, 255, 0.5);
+    padding: 30px 20px;
+}
+
+.clerk_box_content .clerkbox_span {
+    background: url('../img/ordinary_clerk/clerk_bc2.png') no-repeat center center;
+    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+}
+
+.clerk_box_content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.clerk_box_content>div {
+    margin-bottom: 15px;
+}
+
+.clerk_box_content .clerbox_bd {
+    color: #742FD8;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.clerkbox {
+    padding-bottom: 5px;
+}
+
+.clerkbox_bot {
+    padding-left: 18px;
+    color: #333;
+}
+
+/* 按钮  底部注册 */
+.btn_bottom {
+    margin: auto;
+    width: 100%;
+    background: #5B93E9;
+    border-radius: 50px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.btn_bottom a:focus,
+.btn_bottom a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fontwn {
+    font-weight: normal;
+}
+
+footer {
+    height: 4rem;
+}
