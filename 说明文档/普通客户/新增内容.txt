@@ -1,0 +1,5 @@
+普通客户页面 css 直接覆盖原来的就好
+
+新的普通客户页面   为  mobile_clerk_home.html
+
+注：此页面为共通页面   为  mobile_newHome.html

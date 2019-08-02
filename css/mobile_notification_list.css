@@ -1,0 +1,143 @@
+/* 首页 */
+.page {
+    bottom: 0px;
+    background-color: #F6F6F6;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    height: 50px;
+    padding: 10px 15px;
+    background-color: #F6F6F6;
+}
+
+/* 一级渠道 */
+.notice_box {
+    /* padding: 0px 15px; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.notice_box>div {
+    padding: 0 15px;
+    background: #fff;
+    margin-bottom: 8px;
+}
+
+.notice_box div.notice_primary_box {
+    padding: 15px 0px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #666;
+}
+
+.notice_box .primary_box_text {
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    flex: 2;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    display: -webkit-box;
+    display: box;
+}
+
+.notice_box .primary_box_spanbox {
+    /* width: calc(100% - 20px); */
+}
+
+.notice_box .primary_box_time {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.notice_box .primary_box_time p {
+    margin: 0;
+    text-align: right;
+    font-size: 11px;
+}
+
+.notice_box .primary_box_time p:first-child {
+    /* font-size: 11px; */
+    color: #5B93E9;
+}
+
+.notice_box .primary_box_time p:last-child {
+    /* font-size: 11px; */
+    color: #999;
+}
+
+.notice_box span.primary_box_span {
+    background: url('../img/primary_channel/newmsg.png') no-repeat center center;
+    background-size: 100% 100%;
+    width: 15px;
+    height: 16px;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    left: 0;
+}
+
+/* 搜索框 */
+.weui-search-bar {
+    padding: 0;
+    background-color: #F6F6F6;
+}
+
+.weui-search-bar__box {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+[class*=" weui-icon-"]:before,
+[class^=weui-icon-]:before {
+    margin-left: 0;
+}
+
+.weui-search-bar__box .weui-icon-search {
+    left: 10px;
+}
+
+.weui-search-bar__box .weui-search-bar__input {
+    height: 100%;
+    padding: 0 30px;
+    font-size: 13px;
+    width: calc(100% - 60px);
+}
+
+.weui-search-bar__box {
+    width: 80%;
+    border: 1px solid #bfbfbf;
+    border-radius: 15px;
+}
+
+.weui-search-bar__form {
+    background-color: transparent;
+}
+
+.weui-search-bar_text {
+    width: calc(20% - 15px);
+    display: inline-block;
+    text-align: right;
+    color: #999999;
+    font-size: 13px;
+}
+
+.weui-search-bar__box {
+    display: inline-block;
+}

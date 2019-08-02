@@ -1,0 +1,39 @@
+/* 首页 */
+.page {
+    bottom: 0px;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    padding: 25px 25px 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+}
+
+.notice_box_time {
+    color: #666;
+    font-size: 12px;
+    margin: 8px 0px;
+}
+
+.content_img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    font-size: 12px;
+    color: #666666;
+    padding: 0px 15px 15px 15px;
+}
+
+section>div {
+    text-indent: 2em;
+    margin-bottom: 10px;
+}

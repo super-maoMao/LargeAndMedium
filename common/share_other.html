@@ -1,0 +1,159 @@
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8" />
+    <title>产品详情</title>
+    <META HTTP-EQUIV="pragma" CONTENT="no-cache搜索" />
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate" />
+    <META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT" />
+    <META HTTP-EQUIV="expires" CONTENT="0" />
+    <meta name="viewport"
+        content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/weui.min.css" />
+    <link rel="stylesheet" href="./share_other.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css" />
+    <style>
+        html,
+        body,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body ontouchstart class="backgroundColor">
+    <div class="page">
+        <!-- 悬浮按钮 -->
+        <div class="fixeBtn" id="fixeBtn_box" style="position:fixed;top:50%;left: 50%;transform: translate(-50%,-50%)">
+            <img src="../img/business/business_product/product_icon.png" class="fixedIcon" style="width:80px">
+        </div>
+
+        <!-- 弹框 -->
+        <div id="dialogs1" class="dialogs dialogs_1">
+            <div class="js_dialog" id="iosDialog1" style="display: none;">
+                <div class="weui-mask"></div>
+                <div class="weui-dialog">
+                    <div class="weui-dialog__hd">
+                        <strong class="weui-dialog__title">分享</strong>
+                        <div class="weui-dialog__close">
+                            <img src="../img/guanbi.png">
+                        </div>
+
+                    </div>
+                    <div class="weui-dialog__bd">
+                        <p class="generating_information">生成链接</p>
+                        <p class="generating_information">生成二维码</p>
+                        <p class="generating_information">生成画报</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 弹框 海报|链接|二维码 -->
+        <div id="dialogs2" class="dialogs dialogs_2">
+            <div class="js_dialog" id="iosDialog2" style="display:none">
+                <div class="weui-mask"></div>
+                <div class="weui-dialog">
+                    <div class="weui-dialog__hd">
+                        <strong class="weui-dialog__title">生成成功</strong>
+                        <div class="weui-dialog__close">
+                            <img src="../img/guanbi.png">
+                        </div>
+                    </div>
+                    <div class="weui-dialog__bd">
+                        <!-- 二维码 -->
+                        <div class="Qrcode_box" style="display:none">
+                            <div class="poster">
+                                <img src="../img/share_bc.png">
+                                <div class="imgPositon">
+                                    <img src="../img/share_numBc.png">
+                                </div>
+                            </div>
+                            <div class="footer_box">
+                                <img src="../img/share_download.png">
+                                <p>保存到本地</p>
+                            </div>
+                        </div>
+                        <!-- 画报 -->
+                        <div class="poster_box" style="display:none">
+                            <div class="poster">
+                                <img src="../img/share_bc2.png">
+                                <div class="weui-flex poster_bom_icon">
+                                    <div class="weui-flex__item">
+                                        <img src="../img/wexin_icon1.png">
+                                        分享给好友
+                                    </div>
+                                    <div class="weui-flex__item">
+                                        <img src="../img/wexin_icon2.png">
+                                        分享到朋友圈
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer_box">
+                                <img src="../img/share_download.png">
+                                <p>保存到本地</p>
+                            </div>
+                        </div>
+                        <!-- 链接 -->
+                        <div class="link_box" style="display:none">
+                            <div class="linker">
+                                <div class="link_top_title">
+                                    https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=UI%E4%B8%AD%E5%9B%BD&rsv_pinputT=14300&rsv_sug4=14302
+                                </div>
+                                <div class="link_top_content">复制链接</div>
+                                <div class="weui-flex poster_bom_icon">
+                                    <div class="weui-flex__item">
+                                        <img src="../img/wexin_icon1.png">
+                                        分享给好友
+                                    </div>
+                                    <div class="weui-flex__item">
+                                        <img src="../img/wexin_icon2.png">
+                                        分享到朋友圈
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script type="text/javascript">
+    // 弹框
+    let $iosDialog1 = $('#iosDialog1');
+    $('#fixeBtn_box').on('click', function () {
+        $iosDialog1.fadeIn(200);
+    });
+    //关闭弹框
+    $('.dialogs').on('click', '.weui-dialog__close', function () {
+        $(this).parents('.js_dialog').fadeOut(200);
+        //将分享的都隐藏掉
+        $(".Qrcode_box").fadeOut(200);
+        $(".poster_box").fadeOut(200);
+        $(".link_box").fadeOut(200);
+    });
+    let $iosDialog2 = $('#iosDialog2');
+    // 生成信息：
+    $('.dialogs.dialogs_1').on('click', '.generating_information', function () {
+        $(this).parents('.js_dialog').fadeOut(200);
+        let testType = $(this).text();
+        //海报：
+        if (testType == '生成画报') {
+            $(".poster_box").fadeIn(200);
+            $iosDialog2.fadeIn(200);
+        } else if (testType == '生成二维码') {
+            $(".Qrcode_box").fadeIn(200);
+            $iosDialog2.fadeIn(200);
+        } else if (testType == '生成链接') {
+            $(".link_box").fadeIn(200);
+            $iosDialog2.fadeIn(200);
+        }
+
+    })
+</script>
+
+</html>
