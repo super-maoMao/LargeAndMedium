@@ -1,0 +1,285 @@
+/* title */
+.page {
+    bottom: 0px;
+    background: #ffffff;
+    padding-top: 40px;
+    height: 100%;
+    overflow: hidden;
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.headerH55 {
+    height: 55px;
+    line-height: 55px;
+}
+
+header.headerH55 {
+    font-size: 18px;
+    color: #000;
+}
+
+.patentRelative {
+    position: relative;
+}
+
+.header_bac {
+    background: #f6f6f6;
+}
+
+label {
+    font-weight: normal;
+}
+
+.weui-cells_form {
+    font-size: 13px;
+}
+
+.weui-cell__bd.name_box {
+    border-bottom: 1px solid #d5d5d5;
+    /* font-size: 15px; */
+}
+
+.weui-cell-label {
+    text-align: right;
+    margin-right: 10px;
+    /* font-size: 15px; */
+}
+
+.weui-cells:before,
+.weui-cells:after,
+.weui-cell:before {
+    border: none;
+}
+
+.weui-cells {
+    padding: 0px 30px;
+}
+
+.weui-flexnum {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3;
+}
+
+.weui_option_select {
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    width: 100%;
+    font-size: inherit;
+    position: relative;
+    z-index: 1;
+    /* padding-left: 16px; */
+    color: #666;
+}
+
+.weui-cell_select {
+    padding: 16px;
+    /* font-size: 15px; */
+}
+
+.name_box {
+    color: #666;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+/* 按钮  底部注册 */
+.btn_bottom {
+    margin: auto;
+    width: 85%;
+    background: #5B93E9;
+    border-radius: 50px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.btn_bottom a:focus,
+.btn_bottom a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fontwn {
+    font-weight: normal;
+}
+
+footer {
+    margin-top: 60px;
+    height: 4rem;
+}
+
+/* 弹框 */
+
+.dialogs .weui-dialog {
+    width: 80%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.dialogs#dialogs1 .weui-dialog {
+    width: 70%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.dialogs .weui-dialog .weui-dialog__hd {
+    background: #5B93E9;
+    color: #fff;
+    padding: 10px 24px;
+}
+
+.dialogs .weui-dialog .weui-dialog__bd {
+    padding-top: 18px;
+    color: #333333;
+    font-size: 14px;
+}
+
+.dialogs .weui-dialog .weui-dialog__hd .weui-dialog__title {
+    font-size: 15px;
+}
+
+.dialogs .weui-dialog .weui-dialog_footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 20px;
+}
+
+.dialogs .weui-dialog .weui-dialog_footer .weui-dialog__btn {
+    flex: none;
+    min-width: 30%;
+    background-color: #5B93E9;
+    color: #fff;
+    padding: 10px;
+    height: 30px;
+    line-height: 10px;
+    border-radius: 15px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.weui-dialog_inputbox input {
+    border: 1px solid #D5D5D5;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.weui-dialog_inputbox {
+    padding-top: 20px;
+}
+
+.codeMsg,
+.codeMsg2 {
+    font-size: 13px;
+    color: #7F7F7F;
+    padding: 10px;
+    text-align: right;
+    margin: 0;
+}
+
+#iosDialog2 .weui-dialog__bd {
+    padding-bottom: 5px;
+}
+
+#dialogs1 .weui-dialog {
+    overflow: unset;
+}
+
+.positionsuccessIcon {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -20%;
+    z-index: 9999;
+}
+
+
+/* 四格验证码实现 */
+.val-box {
+    display: flex;
+    text-align: center;
+    position: relative;
+    background: rgba(255, 255, 255, 0);
+    justify-content: space-around;
+}
+
+.val-box input[type=text] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 34px;
+    width: 212px;
+    z-index: -999;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+}
+
+.val-box div {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;
+    float: left;
+    margin: 2px 5px;
+    z-index: 5;
+    font-family: arial;
+    text-align: center;
+    cursor: text;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.val-box .available {
+    border-color: #D5D5D5;
+}
+
+
+.weui-cell {
+    padding: 16px 0px;
+}
+
+.redColor {
+    color: #FF0000;
+}
+
+.regcode {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.weui-footer {
+    margin-top: 30px;
+    color: #999999;
+    vertical-align: middle;
+}
+
+.secondary_icon {
+    width: 13px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.secondary_footer_text {
+    margin-left: 15px;
+}
