@@ -1,5 +1,11 @@
-一级渠道首页 页面 css 直接覆盖原来的就好
+1. 首页：
+	（1）一级渠道首页 页面 css 直接覆盖原来的就好
 
-新的一级渠道页面   为  mobile_channel_home.html
+	（2）新的一级渠道首页页面   为  mobile_channel_home.html
 
-注：此页面为共通页面   为  mobile_newHome.html
+	   注：此首页页面为共通页面   为  mobile_newHome.html
+
+2.分享酬金页面：
+	（1）新的一级渠道分享酬金页面为mobile_channel_callFee_incentive.html
+
+	   注：一级渠道分享酬金 页面 为mobile_callFee_incentive.html

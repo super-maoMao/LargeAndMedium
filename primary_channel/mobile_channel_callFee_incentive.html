@@ -1,0 +1,163 @@
+<html lang="zh">
+
+<head>
+	<meta charset="utf-8" />
+	<title>一级渠道分享酬金</title>
+	<META HTTP-EQUIV="pragma" CONTENT="no-cache搜索" />
+	<META HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate" />
+	<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT" />
+	<META HTTP-EQUIV="expires" CONTENT="0" />
+	<meta name="viewport"
+		content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="../css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../css/weui.min.css" />
+	<link rel="stylesheet" href="../css/mobile_callfeeincentive.css" />
+	<style>
+		html,
+		body,
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+
+<body ontouchstart class="bac_white">
+	<div class="page bac_white">
+		<div class="page__bd callfee_box" style="height: 100%;">
+			<div class="weui-form-preview__hd">
+				<label class="weui-form-preview__label">话费激励来源统计</label>
+				<div class="weui-flex" style="justify-content: center;flex-direction: row">
+					<input type="text" class="weui-input weui-flex__item inputdate" placeholder="开始日期" id="starttime" />
+					<input type="text" class="weui-input weui-flex__item inputdate" placeholder="结束日期" id="endtime" />
+				</div>
+			</div>
+			<section>
+				<div id="main" style="width: 100%;height:300px;"></div>
+				<p class="allrich">总获得话费激励：1500元</p>
+			</section>
+			<footer>
+				<a href="javascript:;" class="weui-btn weui-btn_primary">查看更多</a>
+				<a href="javascript:;" class="weui-btn weui-btn_primary">提现</a>
+			</footer>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../laydate/laydate.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script type="text/javascript">
+	// 日期选择
+	laydate.render({
+		elem: '#endtime', //指定元素
+	});
+	laydate.render({
+		elem: '#starttime', //指定元素
+	});
+
+	// echarts:
+	let msg = [{
+			value: '1548',
+			name: '卡片办理酬金',
+			val: 30
+		},
+		{
+			value: '535',
+			name: '流量包办理酬金',
+			val: 10
+		},
+		{
+			value: '510',
+			name: '宽带办理酬金',
+			val: 10
+		},
+		{
+			value: '634',
+			name: '业务变更酬金',
+			val: 40
+		},
+		{
+			value: '735',
+			name: '终端购买酬金',
+			val: 10
+		},
+	];
+	var myChart = echarts.init(document.getElementById('main'));
+	let option = {
+		tooltip: {
+			trigger: 'item',
+			// formatter: '{a} <br/>{b} : {c} ({d}%)',
+			show: true,
+			//在移动端，提示框中的内容如果长了就会移动到窗口外，所以该参数是限制提示框始终在窗口内
+			confine: true,
+			formatter: function (params) {
+				// console.log(params);
+				var res = '<div><p>话费激励</p></div>';
+				res += '<p>' + params.name + ':' + params.value + '</p><p>占比:' + params.data.val + '</p>';
+				return res;
+			},
+			textStyle: {
+				fontSize: 12,
+			},
+		},
+		legend: {
+			show: false,
+		},
+		datazoom: {
+			show: true,
+			start: 30,
+			end: 100,
+		},
+		series: [{
+			type: 'pie',
+			radius: '50%',
+			center: ['50%', '50%'],
+			selectedMode: 'single',
+			data: msg,
+			itemStyle: {
+				emphasis: {
+					shadowBlur: 10,
+					shadowOffsetX: 0,
+					shadowColor: 'rgba(0, 0, 0, 0.5)',
+				},
+				normal: {
+					color: function (params) {
+						//自定义颜色
+						let colorList = ['#FDC043', '#B46EF5', '#10359E', '#6284E5', '#39D1BA'];
+						return colorList[params.dataIndex];
+					},
+				},
+			},
+			labelLine: {
+				normal: {
+					length: 10,
+					length2: 30,
+				},
+			},
+			label: {
+				normal: {
+					formatter: '{b|{b}}\n\n',
+					borderWidth: 20,
+					borderRadius: 4,
+					padding: [0, -30],
+					rich: {
+						a: {
+							fontSize: 12,
+							lineHeight: 20,
+						},
+						b: {
+							fontSize: 12,
+							lineHeight: 20,
+						},
+					},
+				},
+			},
+		}, ],
+	};
+	myChart.setOption(option);
+	myChart.resize();
+	window.onresize = myChart.resize;
+</script>
+
+</html>
