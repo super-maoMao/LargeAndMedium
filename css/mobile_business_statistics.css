@@ -156,6 +156,10 @@ footer .weui-btn_primary:not(.weui-btn_disabled):active {
     text-align: center;
 }
 
+.content_box_weui .weui-form-preview__bd .weui-form-preview__item.weui-flex{
+    align-items: center;
+}
+
 .tacenter {
     text-align: center;
 }
